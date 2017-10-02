@@ -1167,6 +1167,20 @@ time:=time.Duration(seconds)*time.Second
 		<remediationFunctionBaseEffort>5min</remediationFunctionBaseEffort>
 	</rule>
 	<rule>
+		<key>gas:TLSInsecureSkipVerify</key>
+		<name>TLS InsecureSkipVerify set true</name>
+		<internalKey>gas:TLSInsecureSkipVerify</internalKey>
+		<description><![CDATA[<p>TLS InsecureSkipVerify set true.</p>]]>
+		</description>
+		<severity>MAJOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>VULNERABILITY</type>
+		<tag>bad-practice</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>20min</remediationFunctionBaseEffort>
+	</rule>
+	<rule>
 		<key>gas:UnhandledErrors</key>
 		<name>Unhandled errors</name>
 		<internalKey>gas:UnhandledErrors</internalKey>
@@ -1273,6 +1287,22 @@ time:=time.Duration(seconds)*time.Second
 		<status>READY</status>
 		<type>VULNERABILITY</type>
 		<tag>crypto</tag>
+		<tag>bad-practice</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>20min</remediationFunctionBaseEffort>
+	</rule>
+	<rule>
+		<key>safsql:unsafeSQL</key>
+		<name>potentially unsafe SQL statement</name>
+		<internalKey>safsql:unsafeSQL</internalKey>
+		<description><![CDATA[<p>potentially unsafe SQL statement</p>]]>
+
+		</description>
+		<severity>MAJOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>VULNERABILITY</type>
+		<tag>sql</tag>
 		<tag>bad-practice</tag>
 		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
 		<remediationFunctionBaseEffort>20min</remediationFunctionBaseEffort>
