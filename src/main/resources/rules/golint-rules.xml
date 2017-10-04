@@ -1229,7 +1229,7 @@ time:=time.Duration(seconds)*time.Second
 	</rule>
 	<rule>
 		<key>gas:RSAKeyLength</key>
-		<name>RAS key length</name>
+		<name>RSA key length</name>
 		<internalKey>gas:RSAKeyLength</internalKey>
 		<description><![CDATA[<p>RSA keys should be at least 2048 bits.</p>]]>
 
