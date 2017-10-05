@@ -1292,6 +1292,21 @@ time:=time.Duration(seconds)*time.Second
 		<remediationFunctionBaseEffort>20min</remediationFunctionBaseEffort>
 	</rule>
 	<rule>
+		<key>gas:DirectoryPermissions</key>
+		<name>Expect directory permissions to be 0700 or less</name>
+		<internalKey>gas:DirectoryPermissions</internalKey>
+		<description><![CDATA[<p>Expect directory permissions to be 0700 or less</p>]]>
+
+		</description>
+		<severity>MAJOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>VULNERABILITY</type>
+		<tag>bad-practice</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>20min</remediationFunctionBaseEffort>
+	</rule>
+	<rule>
 		<key>safsql:unsafeSQL</key>
 		<name>potentially unsafe SQL statement</name>
 		<internalKey>safsql:unsafeSQL</internalKey>
